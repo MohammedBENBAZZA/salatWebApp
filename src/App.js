@@ -16,12 +16,12 @@ function App() {
     params: { location: 'paris', method: '5', date: '', times: 'daily' },
     headers: {
       'x-rapidapi-host': 'muslimsalat.p.rapidapi.com',
-      'x-rapidapi-key': '4f76acda24msh010e46c950ed444p17a3b5jsn6e1770bd0295'
+      'x-rapidapi-key': 'Your key'
     }
   };
 
   const api = {
-    key: "4cd92112f9b05fc32c515d609e99d255",
+    key: "Your key",
     base: "https://api.openweathermap.org/data/2.5/"
   }
   let d = new Date();
