@@ -1,0 +1,101 @@
+.app{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #2ECC71;
+  background-size: cover;
+  box-sizing: border-box;
+  background-position:bottom ;
+}
+main{
+  min-height: 100vh;
+  background-color: #2ECC71;
+  background-image: url('https://i.pinimg.com/564x/11/bb/37/11bb372b9cfb32ec18eb850156360739.jpg');
+  background-size: cover;
+
+  padding: 10px
+}
+
+.search-box{
+  width: 100%;
+  margin:10px 0 25px
+}
+.search-box .search-bar{
+  justify-self: center;
+  display: block;
+  min-width: 50%;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  background-color: #c1e5eb;
+  border-radius: 15px;
+  color: #5c4e4e;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(248, 248, 248, 0.95);
+}
+.infos-box{
+  background-color: #f1efef;
+  padding: 20px;
+  border-radius: 20px;
+  width: 40%;
+  border: 6px solid rgb(209, 9, 9) ;
+  margin: 10px auto;
+}
+
+.location-box .location {
+  color: rgb(20, 18, 18);
+  font-size: 38px;
+  font-weight: 800;
+  
+  text-align: center;
+
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: lighter;
+  font-style: normal;
+  text-align: center;
+}
+
+.adhan-box {
+  text-align: center;
+  background-color: #84ac3b;
+  margin: 20px auto;
+  padding: 3px;
+  border: 2px solid rgb(255, 255, 255) ;
+  border-radius: 20px;
+  width: 40%;
+}
+
+.adhan-box .time {
+  position: relative;
+  display: inline;
+  border-radius: 20px;
+
+ 
+ 
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 900;
+
+  text-align: center;
+
+}
+
+.adhan-box .salat-name {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Tajawal', sans-serif;
+}
