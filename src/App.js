@@ -16,12 +16,12 @@ function App() {
     params: { location: 'paris', method: '5', date: '', times: 'daily' },
     headers: {
       'x-rapidapi-host': 'muslimsalat.p.rapidapi.com',
-      'x-rapidapi-key': 'Your key'
+      'x-rapidapi-key': '4f76acda24msh010e46c950ed444p17a3b5jsn6e1770bd0295'
     }
   };
 
   const api = {
-    key: "Your key",
+    key: "4cd92112f9b05fc32c515d609e99d255",
     base: "https://api.openweathermap.org/data/2.5/"
   }
   let d = new Date();
@@ -56,25 +56,19 @@ function App() {
   const hourChanger = Hour => {
     let hour = Hour.split(" ");
     let h = hour[1];
-
     if (h === "am") {
       return hour[0];
     }
     else if (h === "pm") {
       let t = hour[0].split(":");
+
       let newH = parseInt(t[0]) + 12;
-
-
+      if (newH===24){
+        newH=newH-12;
+      }
       return `${newH}:${t[1]}`
-
     }
-
-
-
   }
-
-
-
 
   return (
     <div className="App">
@@ -96,10 +90,8 @@ function App() {
               <div className="location-box">
                 <div className="location"><i className="fas fa-map-marker-alt"></i> {adhan.city}, {adhan.country}</div>
                 <div className="date">{ }</div>
-
               </div>
             </div>
-
             <div className="adhan-box">
               <div className="salat-name">
                 الصبح
@@ -107,7 +99,6 @@ function App() {
               <div className="time">
                 {hourChanger(adhan.items[0].fajr)}
               </div>
-
             </div>
             <div className="adhan-box">
               <div className="salat-name">
@@ -124,9 +115,7 @@ function App() {
               <div className="time">
                 {hourChanger(adhan.items[0].asr)}
               </div>
-
             </div>
-
             <div className="adhan-box">
               <div className="salat-name">
                 المغرب
@@ -145,9 +134,7 @@ function App() {
             </div>
           </>
         ) : ('')}
-
       </main>
-
     </div>
   );
 }
